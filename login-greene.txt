@@ -1,0 +1,25 @@
+// Login to the Greene node by first:
+
+
+1. ssh hpcgwtunnel
+2. #Then login to greene on another terminal
+
+
+
+
+// Singluarity: With the correct overlay image. 
+
+
+With the correct anaconda environment
+
+
+1.  singularity exec --bind /home/yb1025/mj_envs/mujocopy-buildlock:/ext3/miniconda3/lib/python3.8/site-packages/mujoco_py/generated/mujocopy-buildlock --overlay /home/yb1025/mj_envs/overlay-7.5GB-300K.ext3:ro /scratch/work/public/singularity/cuda11.1.1-cudnn8-devel-ubuntu20.04.sif /bin/bash
+
+
+2.  source /ext3/env.sh
+
+
+// For the environment visualisations. 
+
+
+3. export LD_PRELOAD=/share/apps/local/lib/libGL.so
