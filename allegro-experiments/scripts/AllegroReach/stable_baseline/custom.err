@@ -1,0 +1,104 @@
+Traceback (most recent call last):
+  File "snehaCustom.py", line 477, in <module>
+    model.learn(5000)
+  File "snehaCustom.py", line 466, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 226, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "snehaCustom.py", line 417, in collect_rollouts
+    actions, values, log_probs = self.policy.forward(obs_tensor)
+  File "snehaCustom.py", line 125, in forward
+    latent_pi, latent_vf, latent_sde = self._get_latent(obs['observation'])
+  File "snehaCustom.py", line 108, in _get_latent
+    features = self.extract_features(obs)
+  File "snehaCustom.py", line 91, in extract_features
+    obs_concat = th.cat((obs['achieved_goal'],obs['desired_goal'],obs['observation']),1)
+IndexError: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "snehaCustom.py", line 478, in <module>
+    model.learn(5000)
+  File "snehaCustom.py", line 467, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 226, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "snehaCustom.py", line 418, in collect_rollouts
+    actions, values, log_probs = self.policy.forward(obs_tensor)
+  File "snehaCustom.py", line 126, in forward
+    latent_pi, latent_vf, latent_sde = self._get_latent(obs['observation'])
+  File "snehaCustom.py", line 109, in _get_latent
+    features = self.extract_features(obs)
+  File "snehaCustom.py", line 92, in extract_features
+    obs_concat = th.cat((obs['achieved_goal'],obs['desired_goal'],obs['observation']),1)
+IndexError: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "snehaCustom.py", line 478, in <module>
+    model.learn(5000)
+  File "snehaCustom.py", line 467, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 226, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "snehaCustom.py", line 418, in collect_rollouts
+    actions, values, log_probs = self.policy.forward(obs_tensor)
+  File "snehaCustom.py", line 126, in forward
+    latent_pi, latent_vf, latent_sde = self._get_latent(obs['observation'])
+  File "snehaCustom.py", line 109, in _get_latent
+    features = self.extract_features(obs)
+  File "snehaCustom.py", line 92, in extract_features
+    obs_concat = th.cat((obs['achieved_goal'],obs['desired_goal'],obs['observation']),1)
+IndexError: too many indices for tensor of dimension 2
+Traceback (most recent call last):
+  File "snehaCustom.py", line 477, in <module>
+    model.learn(5000)
+  File "snehaCustom.py", line 466, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 226, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "snehaCustom.py", line 417, in collect_rollouts
+    actions, values, log_probs = self.policy.forward(obs_tensor)
+  File "snehaCustom.py", line 126, in forward
+    latent_pi, latent_vf, latent_sde = self._get_latent(obs)
+  File "snehaCustom.py", line 108, in _get_latent
+    features = self.extract_features(obs)
+  File "snehaCustom.py", line 89, in extract_features
+    preprocessed_obs = preprocess_obs(obs, self.observation_space, normalize_images=self.normalize_images)
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/stable_baselines3/common/preprocessing.py", line 102, in preprocess_obs
+    return obs.float()
+AttributeError: 'dict' object has no attribute 'float'
+Traceback (most recent call last):
+  File "snehaCustom.py", line 477, in <module>
+    model.learn(5000)
+  File "snehaCustom.py", line 466, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 226, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "snehaCustom.py", line 417, in collect_rollouts
+    actions, values, log_probs = self.policy.forward(obs_tensor)
+  File "snehaCustom.py", line 126, in forward
+    latent_pi, latent_vf, latent_sde = self._get_latent(obs)
+  File "snehaCustom.py", line 109, in _get_latent
+    latent_pi, latent_vf = self.mlp_extractor(features)
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/stable_baselines3/common/torch_layers.py", line 268, in forward
+    return self.policy_net(shared_latent), self.value_net(shared_latent)
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/torch/nn/modules/container.py", line 139, in forward
+    input = module(input)
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 96, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/torch/nn/functional.py", line 1847, in linear
+    return torch._C._nn.linear(input, weight, bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x16 and 13x64)
+Traceback (most recent call last):
+  File "snehaCustom.py", line 477, in <module>
+    model.learn(5000)
+  File "snehaCustom.py", line 466, in learn
+    reset_num_timesteps=reset_num_timesteps,
+  File "/home/yb1025/.conda/envs/allegro_gym/lib/python3.6/site-packages/stable_baselines3/common/on_policy_algorithm.py", line 226, in learn
+    continue_training = self.collect_rollouts(self.env, callback, self.rollout_buffer, n_rollout_steps=self.n_steps)
+  File "snehaCustom.py", line 435, in collect_rollouts
+    rollout_buffer.add(self._last_obs, actions, rewards, self._last_episode_starts, values, log_probs)
+AttributeError: 'CustomPPO' object has no attribute '_last_episode_starts'

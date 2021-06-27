@@ -1,0 +1,167 @@
+#1 creating gym environment
+OBSERVATION SPACE IN THE 
+Dict(achieved_goal:Box(-inf, inf, (3,), float32), desired_goal:Box(-inf, inf, (3,), float32), observation:Box(-inf, inf, (10,), float32))
+OrderedDict([('achieved_goal', array([2.407319  , 0.77940255, 0.11443868], dtype=float32)), ('desired_goal', array([-0.5864894 ,  0.73124087, -1.1716467 ], dtype=float32)), ('observation', array([ 0.9292486 ,  0.9768973 , -0.00682535, -0.057102  ,  1.3815502 ,
+       -0.07241248,  1.7567687 ,  0.18278717,  0.0427565 ,  0.7058205 ],
+      dtype=float32))])
+#2 creating model: CustomActorCriticPolicy
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Self , features dim in buildmlp extractor is
+13
+SELF FEATURES DIM IS EQUAL TO: 
+16
+#3 learning...
+ Feature extractor returns tensor([[ 1.2522e+00,  7.4028e-01,  4.8616e-01,  1.3418e+00,  7.4910e-01,
+          5.3472e-01,  1.9781e-04,  7.1519e-05,  7.7393e-06,  5.5199e-08,
+         -2.4293e-06,  4.7333e-06, -2.2846e-06]])
+#1 creating gym environment
+OBSERVATION SPACE IN THE 
+Dict(achieved_goal:Box(-inf, inf, (3,), float32), desired_goal:Box(-inf, inf, (3,), float32), observation:Box(-inf, inf, (10,), float32))
+OrderedDict([('achieved_goal', array([-0.9174725 ,  2.3175707 ,  0.85002804], dtype=float32)), ('desired_goal', array([ 1.7160993, -1.9199226, -0.7158682], dtype=float32)), ('observation', array([-0.38213596,  0.21184207, -1.9955342 , -1.2650937 ,  0.614706  ,
+        2.2306964 ,  0.2748493 , -0.23202574, -1.6383744 ,  0.65423596],
+      dtype=float32))])
+#2 creating model: CustomActorCriticPolicy
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Self , features dim in buildmlp extractor is
+13
+SELF FEATURES DIM IS EQUAL TO: 
+16
+#3 learning...
+#1 creating gym environment
+OBSERVATION SPACE IN THE 
+Dict(achieved_goal:Box(-inf, inf, (3,), float32), desired_goal:Box(-inf, inf, (3,), float32), observation:Box(-inf, inf, (10,), float32))
+OrderedDict([('achieved_goal', array([-0.880638 , -1.6203371, -1.5525446], dtype=float32)), ('desired_goal', array([-0.35334438, -1.447241  ,  0.2637586 ], dtype=float32)), ('observation', array([-1.0806535 , -0.64781296, -1.7948979 ,  0.36001074,  0.684656  ,
+        1.7429065 ,  0.978328  , -0.33544022, -0.2690856 ,  0.15766457],
+      dtype=float32))])
+#2 creating model: CustomActorCriticPolicy
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Self , features dim in buildmlp extractor is
+13
+SELF FEATURES DIM IS EQUAL TO: 
+16
+#3 learning...
+#1 creating gym environment
+#2 creating model: CustomActorCriticPolicy
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+#3 learning...
+The value of self._last_obs
+OrderedDict([('achieved_goal', array([[1.3418326 , 0.7491004 , 0.53472275]], dtype=float32)), ('desired_goal', array([[1.2599957, 0.8516418, 0.5891581]], dtype=float32)), ('observation', array([[ 1.3418326e+00,  7.4910039e-01,  5.3472275e-01,  1.9780513e-04,
+         7.1519302e-05,  7.7393297e-06,  5.5199283e-08, -2.4292744e-06,
+         4.7332564e-06, -2.2845522e-06]], dtype=float32))])
+The value of obs_tensor
+{'achieved_goal': tensor([[1.3418, 0.7491, 0.5347]]), 'desired_goal': tensor([[1.2600, 0.8516, 0.5892]]), 'observation': tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])}
+Observations here are: 
+tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])
+IN PREPROCESSING.PY
+<class 'gym.spaces.box.Box'>
+Box(-inf, inf, (13,), float32)
+#1 creating gym environment
+#2 creating model: CustomActorCriticPolicy
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+#3 learning...
+The value of self._last_obs
+OrderedDict([('achieved_goal', array([[1.3418326 , 0.7491004 , 0.53472275]], dtype=float32)), ('desired_goal', array([[1.4703212 , 0.78755665, 0.48613518]], dtype=float32)), ('observation', array([[ 1.3418326e+00,  7.4910039e-01,  5.3472275e-01,  1.9780513e-04,
+         7.1519302e-05,  7.7393297e-06,  5.5199283e-08, -2.4292744e-06,
+         4.7332564e-06, -2.2845522e-06]], dtype=float32))])
+The value of obs_tensor
+{'achieved_goal': tensor([[1.3418, 0.7491, 0.5347]]), 'desired_goal': tensor([[1.4703, 0.7876, 0.4861]]), 'observation': tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])}
+Observations here are: 
+tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])
+IN PREPROCESSING.PY
+<class 'gym.spaces.box.Box'>
+Box(-inf, inf, (13,), float32)
+observatyion space is
+tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])
+#1 creating gym environment
+#2 creating model: CustomActorCriticPolicy
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+#3 learning...
+The value of self._last_obs
+OrderedDict([('achieved_goal', array([[1.3418326 , 0.7491004 , 0.53472275]], dtype=float32)), ('desired_goal', array([[1.2231513 , 0.67408407, 0.6086443 ]], dtype=float32)), ('observation', array([[ 1.3418326e+00,  7.4910039e-01,  5.3472275e-01,  1.9780513e-04,
+         7.1519302e-05,  7.7393297e-06,  5.5199283e-08, -2.4292744e-06,
+         4.7332564e-06, -2.2845522e-06]], dtype=float32))])
+The value of obs_tensor
+{'achieved_goal': tensor([[1.3418, 0.7491, 0.5347]]), 'desired_goal': tensor([[1.2232, 0.6741, 0.6086]]), 'observation': tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])}
+Observations here are: 
+tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])
+IN PREPROCESSING.PY
+<class 'gym.spaces.box.Box'>
+Box(-inf, inf, (13,), float32)
+observatyion space is
+Box(-inf, inf, (13,), float32)
+6#1 creating gym environment
+#2 creating model: CustomActorCriticPolicy
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+#3 learning...
+The value of self._last_obs
+OrderedDict([('achieved_goal', array([[1.3418326 , 0.7491004 , 0.53472275]], dtype=float32)), ('desired_goal', array([[1.3947473, 0.6859154, 0.3911928]], dtype=float32)), ('observation', array([[ 1.3418326e+00,  7.4910039e-01,  5.3472275e-01,  1.9780513e-04,
+         7.1519302e-05,  7.7393297e-06,  5.5199283e-08, -2.4292744e-06,
+         4.7332564e-06, -2.2845522e-06]], dtype=float32))])
+The value of obs_tensor
+{'achieved_goal': tensor([[1.3418, 0.7491, 0.5347]]), 'desired_goal': tensor([[1.3947, 0.6859, 0.3912]]), 'observation': tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])}
+Observations here are: 
+{'achieved_goal': tensor([[1.3418, 0.7491, 0.5347]]), 'desired_goal': tensor([[1.3947, 0.6859, 0.3912]]), 'observation': tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])}
+IN PREPROCESSING.PY
+<class 'gym.spaces.box.Box'>
+Box(-inf, inf, (13,), float32)
+#1 creating gym environment
+#2 creating model: CustomActorCriticPolicy
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+#3 learning...
+The value of self._last_obs
+OrderedDict([('achieved_goal', array([[1.3418326 , 0.7491004 , 0.53472275]], dtype=float32)), ('desired_goal', array([[1.2917839 , 0.6954068 , 0.40498915]], dtype=float32)), ('observation', array([[ 1.3418326e+00,  7.4910039e-01,  5.3472275e-01,  1.9780513e-04,
+         7.1519302e-05,  7.7393297e-06,  5.5199283e-08, -2.4292744e-06,
+         4.7332564e-06, -2.2845522e-06]], dtype=float32))])
+The value of obs_tensor
+{'achieved_goal': tensor([[1.3418, 0.7491, 0.5347]]), 'desired_goal': tensor([[1.2918, 0.6954, 0.4050]]), 'observation': tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])}
+Observations here are: 
+{'achieved_goal': tensor([[1.3418, 0.7491, 0.5347]]), 'desired_goal': tensor([[1.2918, 0.6954, 0.4050]]), 'observation': tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])}
+IN PREPROCESSING.PY
+<class 'gym.spaces.box.Box'>
+Box(-inf, inf, (13,), float32)
+#1 creating gym environment
+#2 creating model: CustomActorCriticPolicy
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+#3 learning...
+The value of self._last_obs
+OrderedDict([('achieved_goal', array([[1.3418326 , 0.7491004 , 0.53472275]], dtype=float32)), ('desired_goal', array([[1.3669038 , 0.6560787 , 0.68377155]], dtype=float32)), ('observation', array([[ 1.3418326e+00,  7.4910039e-01,  5.3472275e-01,  1.9780513e-04,
+         7.1519302e-05,  7.7393297e-06,  5.5199283e-08, -2.4292744e-06,
+         4.7332564e-06, -2.2845522e-06]], dtype=float32))])
+The value of obs_tensor
+{'achieved_goal': tensor([[1.3418, 0.7491, 0.5347]]), 'desired_goal': tensor([[1.3669, 0.6561, 0.6838]]), 'observation': tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])}
+Observations here are: 
+{'achieved_goal': tensor([[1.3418, 0.7491, 0.5347]]), 'desired_goal': tensor([[1.3669, 0.6561, 0.6838]]), 'observation': tensor([[ 1.3418e+00,  7.4910e-01,  5.3472e-01,  1.9781e-04,  7.1519e-05,
+          7.7393e-06,  5.5199e-08, -2.4293e-06,  4.7333e-06, -2.2846e-06]])}
+IN PREPROCESSING.PY
+<class 'gym.spaces.box.Box'>
+Box(-inf, inf, (13,), float32)
